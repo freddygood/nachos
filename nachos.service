@@ -3,8 +3,8 @@ Description=uWSGI SMIL parsing service (nachos)
 After=syslog.target
 
 [Service]
-ExecStart=/var/lib/nachos/app/venv/bin/uwsgi --ini /var/lib/nachos/app/uwsgi.ini
-WorkingDirectory=/var/lib/nachos/app
+ExecStart=/var/lib/parse_smil/nachos/venv/bin/uwsgi --ini /var/lib/parse_smil/nachos/uwsgi.ini
+WorkingDirectory=/var/lib/parse_smil/nachos
 Restart=always
 KillSignal=SIGQUIT
 ExecReload=/bin/kill -HUP $MAINPID
